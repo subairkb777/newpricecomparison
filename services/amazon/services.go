@@ -7,6 +7,13 @@ import (
 )
 
 // AmazonItem ...
+type Amazon struct {
+	Geo string
+	
+}
+func InitializeClient() *Amazon {
+	return &Amazon{}
+}
 // have a  struct with common elemets for object use. All other API specific struct will go to DAO
 type AmazonItem struct {
 	ItemID      string  `json:"itemid"`
