@@ -1,3 +1,4 @@
+// Subair: this is  controller not service
 package amazon
 
 import (
@@ -7,6 +8,10 @@ import (
 )
 
 // AmazonItem ...
+// Subair:  Each API will have different request and reposnse struct that will come inside DAO
+// The struct you initiallise in interface file should not be this.
+// Think of a struct which have common to all the apis.
+// Add market place struct here and add a initialising fn here that should be called from interface.
 type AmazonItem struct {
 	ItemID      string  `json:"itemid"`
 	ItemName    string  `json:"item"`
