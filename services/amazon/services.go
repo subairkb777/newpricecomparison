@@ -7,6 +7,7 @@ import (
 )
 
 // AmazonItem ...
+// have a  struct with common elemets for object use. All other API specific struct will go to DAO
 type AmazonItem struct {
 	ItemID      string  `json:"itemid"`
 	ItemName    string  `json:"item"`
