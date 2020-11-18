@@ -7,10 +7,14 @@ import (
 	"./flipkart"
 )
 
+// Subair: change the name to MarketPlaceClient
 type ItemInterface interface {
 	GetItem(string) (string, error)
 }
 
+// Subair: no definitions here
+// Subair: call initialise fn amazon, flipkart etc. object specific struct here. (no definition) and store the corresponding objects in a hashMap
+// key: market place, value: initialised struct
 func GetItem(itemname string, marketplace string) (ItemInterface, error) {
 	var i ItemInterface
 	switch marketplace {
