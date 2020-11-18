@@ -9,6 +9,7 @@ import (
 
 // Subair: change the name to MarketPlaceClient
 type ItemInterface interface {
+	// suabir: return a struct instead of string.
 	GetItem(string) (string, error)
 }
 
